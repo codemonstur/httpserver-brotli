@@ -1,0 +1,16 @@
+include https://raw.githubusercontent.com/codemonstur/bobfiles/master/foss-lib-github-maven
+
+vendor: com.github.codemonstur
+version: 0.1.0
+enablePreview: false
+packaging: jar
+dependencies:
+  - project: ../httpserver
+  - repository: com.aayushatharva.brotli4j:brotli4j:1.6.0
+  - repository: junit:junit:4.13.2
+    scope: test
+
+install
+    cd ../common-server && mvn clean install
+    cd ../httpserver && mvn clean install
+    mvn clean install
