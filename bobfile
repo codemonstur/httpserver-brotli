@@ -6,7 +6,7 @@ enablePreview: false
 packaging: jar
 dependencies:
   - project: ../httpserver
-  - repository: com.aayushatharva.brotli4j:brotli4j:1.7.1
+  - repository: com.aayushatharva.brotli4j:brotli4j:1.8.0
   - repository: junit:junit:4.13.2
     scope: test
 
